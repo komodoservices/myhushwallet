@@ -3,8 +3,7 @@
   "version": "v2.0.8",
   "description": "Secure Hush wallet online",
   "main": "index.js",
-  "repository": "https://github.com/thetrunk/myhushwallet.git",
-  "author": "The Trunk",
+  "repository": "https://github.com/MyHush/myhushwallet.git",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server",
@@ -42,7 +41,7 @@
     "throttled-queue": "^1.0.4",
     "webpack": "^3.3.0",
     "webpack-dev-server": "^2.5.1",
-    "hushjs": "git://github.com/TheTrunk/hushjs#master"
+    "hushjs": "git://github.com/MyHush/hushjs#master"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
