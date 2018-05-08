@@ -274,7 +274,7 @@ class ZWalletUnlockKey extends React.Component {
             />                        
           </InputGroup>
           <div style={{paddingTop: '8px'}}>
-            <Button color="secondary" className="btn-block" onClick={this.unlockHDWallet}>Generate Wallet</Button>
+            <Button color="secondary" className="btn-block" onClick={this.unlockHDWallet}>Generate Wallet / Login</Button>
           </div>
         </div>
       )

@@ -76236,7 +76236,7 @@ var ZWalletUnlockKey = function (_React$Component3) {
             _react2.default.createElement(
               _reactstrap.Button,
               { color: 'secondary', className: 'btn-block', onClick: this.unlockHDWallet },
-              'Generate Wallet'
+              'Generate Wallet / Login'
             )
           )
         );
