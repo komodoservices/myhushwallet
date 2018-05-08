@@ -30601,13 +30601,13 @@ var ZFooter = function (_React$Component) {
                 'Suggestions? ',
                 _react2.default.createElement(
                   'a',
-                  { href: 'https://myhush.org/#contact' },
+                  { href: 'https://myhush.org/#contact-section' },
                   'Contact us'
                 ),
                 ' or join our ',
                 _react2.default.createElement(
                   'a',
-                  { href: 'https://discord.io/hush' },
+                  { href: 'http://myhush.org/discord' },
                   'Discord'
                 ),
                 ' server!'
@@ -30660,7 +30660,7 @@ var ZFooter = function (_React$Component) {
               _react2.default.createElement('br', null),
               _react2.default.createElement(
                 'a',
-                { href: 'https://discord.io/hush' },
+                { href: 'http://myhush.org/discord' },
                 'discord'
               ),
               _react2.default.createElement('br', null)
