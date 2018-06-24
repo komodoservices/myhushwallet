@@ -21,22 +21,22 @@ export default class ZFooter extends React.Component {
         <Container>      
         <Row>
           <Col md="8">
-            <p>MAKE SURE YOU ARE ON <b>WALLET.MYHUSH.ORG</b></p>
+            <p>MAKE SURE YOU ARE ON <b>WALLET.KOMODO.SERVICES</b></p>
 
             <p>Keys are validated client-side and do not leave your browser or network. You are responsible for keeping your own keys safe!!!</p>
 
-            <p>Suggestions? <a href="https://myhush.org/#contact-section">Contact us</a> or join our <a href="http://myhush.org/discord">Discord</a> server!</p>          
+            <p>Suggestions? <a href="mailto:hello@komodo.services">Contact us</a></p>          
 
             <p style={longP}>Donations are always welcome!<br/>
-              <b>HUSH</b>: <a href="http://dashboard.myhush.org/#donate">Dashboard donation addresses</a><br/>
+              <b>KMD</b>: <a href="https://explorer.komodo.services/addr/donationaddy/#donate">(donation address)</a><br/>
             </p>
           </Col>
           <Col md="4">
-            <a href="https://myhush.org/">website</a><br/>
-            <a href="https://forum.myhush.org/">forum</a><br/>
-            <a href="http://dashboard.myhush.org/">dashboard</a><br/>
-            <a href="https://github.com/MyHush/myhushwallet">github</a><br/>
-            <a href="http://myhush.org/discord">discord</a><br/>
+            <a href="https://komodo.services/">KomodoServices</a><br/>
+            <a href="https://explorer.komodo.services/">Explorer</a><br/>
+            <a href="http://config.komodo.services/">Config Generator</a><br/>
+            <a href="http://paperwallet.komodo.services">Paperwallet</a><br/>
+            <a href="https://github.com/komodoservices">Github</a><br/>
           </Col>
         </Row>
         </Container>
