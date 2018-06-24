@@ -223,8 +223,8 @@ class ZWalletUnlockKey extends React.Component {
                 />
               </Label>
               <FormText color="muted">
-                For Windows, it should be in %APPDATA%/Roaming/Hush<br/>
-                For Mac/Linux, it should be in ~/.Hush
+                For Windows, it should be in %APPDATA%/Roaming/Komodo<br/>
+                For Mac/Linux, it should be in ~/.Komodo
               </FormText>
             </Col>
           </FormGroup>
@@ -663,7 +663,7 @@ class ZSendHUSH extends React.Component {
           // If we don't have enough address
           // fail and tell user
           if (satoshisSoFar < satoshisToSend + satoshisfeesToSend){            
-            this.setSendErrorMessage('Not enough confirmed HUSH in account to perform transaction')
+            this.setSendErrorMessage('Not enough confirmed KMD in account to perform transaction')
             this.setProgressValue(0)          
           }
 
@@ -749,7 +749,7 @@ class ZSendHUSH extends React.Component {
         <Col>
           <Card>
             <CardBlock>       
-              <Alert color="danger">ALWAYS VALIDATE YOUR DESINATION ADDRESS BY SENDING SMALL AMOUNTS OF HUSH FIRST</Alert>              
+              <Alert color="danger">ALWAYS VALIDATE YOUR DESINATION ADDRESS BY SENDING SMALL AMOUNTS OF KOMODO FIRST</Alert>              
               <InputGroup>
                 <InputGroupAddon>From Address</InputGroupAddon>
                 <Input type="select" onChange={this.handleUpdateSelectedAddress}>
@@ -759,7 +759,7 @@ class ZSendHUSH extends React.Component {
               </InputGroup>
               <InputGroup>
                 <InputGroupAddon>To Address</InputGroupAddon>
-                <Input onChange={this.handleUpdateRecipientAddress} placeholder="e.g t1UDhNq2aEqvxEbPzcRM8n2QJV8YJ664rXJ" />
+                <Input onChange={this.handleUpdateRecipientAddress} placeholder="e.g (KomodoServices Donation Addy" />
               </InputGroup>
               <InputGroup>
                 <InputGroupAddon>Amount</InputGroupAddon>
@@ -773,7 +773,7 @@ class ZSendHUSH extends React.Component {
               <FormGroup check>
                 <Label check>
                   <Input onChange={this.handleCheckChanged} type="checkbox" />{' '}
-                  Yes, I would like to send these HUSH
+                  Yes, I would like to send these KMD
                 </Label>
               </FormGroup> 
               <br/>                           
@@ -911,7 +911,7 @@ class ZWalletTabs extends React.Component {
     var now = new Date();
     now = now.toISOString().split('.')[0]+'Z';
 
-    var fileStr = '# Wallet dump created by myhushwallet ' + pjson.version + '\n'
+    var fileStr = '# Wallet dump created by KomodoServices' + pjson.version + '\n'
     fileStr += '# Created on ' + now + '\n\n\n'
 
     Object.keys(this.props.publicAddresses).forEach(function(key) {
@@ -921,7 +921,7 @@ class ZWalletTabs extends React.Component {
     }.bind(this))
     
     const pkBlob = new Blob([fileStr], {type: 'text/plain;charset=utf-8'})
-    FileSaver.saveAs(pkBlob, now + '_myhushwallet_private_keys.txt')
+    FileSaver.saveAs(pkBlob, now + '_komodoserviceswallet_private_keys.txt')
   }
 
   render () {
@@ -941,7 +941,7 @@ class ZWalletTabs extends React.Component {
               className={classnames({ active: this.state.activeTab === '2' })}
               onClick={() => { this.toggleTabs('2'); }}
             >
-              Send HUSH
+              Send KMD
             </NavLink>
           </NavItem>
           <NavItem>
@@ -1013,8 +1013,8 @@ export default class ZWallet extends React.Component {
         showSettings: false,
         showWalletGen: false,
         compressPubKey: true,
-        insightAPI: 'https://explorer.myhush.org/api',
-        explorerURL: 'https://explorer.myhush.org/',
+        insightAPI: 'https://explorer.komodo.services/api',
+        explorerURL: 'https://explorer.komodo.services/',
         useTestNet: false,
         unlockType: UNLOCK_WALLET_TYPE.HD_WALLET
       }
@@ -1147,12 +1147,12 @@ export default class ZWallet extends React.Component {
     _settings.useTestNet = !_settings.useTestNet
 
     if (_settings.useTestNet){
-        _settings.insightAPI = 'https://explorer.testnet.myhush.org/api'
-      _settings.explorerURL = 'https://explorer.testnet.myhush.org/'
+        _settings.insightAPI = 'https://testnet.explorer.komodo.services/api'
+      _settings.explorerURL = 'https://testnet.explorer.komodo.services/'
     }
     else{
-        _settings.insightAPI = 'https://explorer.myhush.org/api'
-        _settings.explorerURL = 'https://explorer.myhush.org/'
+        _settings.insightAPI = 'https://explorer.komodo.services/api'
+        _settings.explorerURL = 'https://explorer.komodo.services/'
     }
 
     this.setState({
@@ -1183,7 +1183,7 @@ export default class ZWallet extends React.Component {
       <Container>
         <Row>
           <Col>
-            <h1 className='display-6'>Hush Wallet&nbsp;
+            <h1 className='display-6'>Komodo Wallet&nbsp;
               <ToolTipButton onClick={this.toggleShowSettings} id={1} buttonText={<MDSettings/>} tooltipText={'settings'}/>&nbsp;
               <ToolTipButton disabled={this.state.publicAddresses === null} onClick={this.resetKeys} id={2} buttonText={<FARepeat/>} tooltipText={'reset wallet'}/>
             </h1>
