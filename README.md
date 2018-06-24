@@ -1,13 +1,13 @@
-# myhushwallet
+# KMD webwallet
 
-MyHushWallet is a client-side browser-based wallet for Hush.
-
-This project is a port of MyZenWallet https://github.com/ZencashOfficial/myzenwallet which was inspired by MyEtherWallet.
-
-Officially at: https://wallet.myhush.org
+KMD WebWallet is a client-side browser-based wallet for Komodo.
 
 
-Unofficial verison can be found on https://myhushwallet.tsdb.eu - development/playing purposes
+
+This is a fork of MyHushWallet at wallet.myhush.org. We thank them very much for their work. 
+
+MyHushWallet project is a port of MyZenWallet https://github.com/ZencashOfficial/myzenwallet which was inspired by MyEtherWallet.
+
 
 # Running locally
 Download dist folder containing: index.html, faq.html, guide.html, favicon.ico, Javascript folder (js) and double click `index.html`
