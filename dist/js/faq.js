@@ -27366,7 +27366,7 @@ var ZNavbar = function (_React$Component) {
           _reactstrap.NavbarBrand,
           { href: '/' },
           _react2.default.createElement('img', { src: '/favicon.ico', height: 42 }),
-          '\xA0wallet.myhush.org'
+          '\xA0wallet.komodo.services'
         ),
         _react2.default.createElement(
           _reactstrap.Collapse,
@@ -30516,50 +30516,50 @@ var ZFooter = function (_React$Component) {
               _react2.default.createElement(
                 'p',
                 null,
-                'MAKE SURE YOU ARE ON ',
+                'Be extra sure you are on ',
                 _react2.default.createElement(
                   'b',
                   null,
-                  'WALLET.MYHUSH.ORG'
+                  'wallet.komodo.serices'
                 )
               ),
               _react2.default.createElement(
                 'p',
                 null,
-                'Keys are validated client-side and do not leave your browser or network. You are responsible for keeping your own keys safe!!!'
+                'Keys are validated client-side and do not leave your browser or network. You are responsible for keeping your keys safe!'
               ),
               _react2.default.createElement(
                 'p',
                 null,
-                'Suggestions? ',
+                'Issues or bugs? Make a ',
                 _react2.default.createElement(
                   'a',
-                  { href: 'https://myhush.org/#contact-section' },
-                  'Contact us'
+                  { href: 'https://github.com/komodoservices/webwallet/issues' },
+                  'Github Issue'
                 ),
-                ' or join our ',
+                ' or chat with us on our ',
                 _react2.default.createElement(
                   'a',
-                  { href: 'http://myhush.org/discord' },
-                  'Discord'
+                  { href: 'http://slackinvite.dabsolutions.co' },
+                  'slack.'
                 ),
-                ' server!'
+                ' Thanks!'
               ),
               _react2.default.createElement(
                 'p',
                 { style: longP },
-                'Donations are always welcome!',
+                'Donations are welcome!',
                 _react2.default.createElement('br', null),
                 _react2.default.createElement(
-                  'b',
+                  'a',
                   null,
-                  'HUSH'
+                  'Komodo/Chips/Assetchains:'
                 ),
                 ': ',
                 _react2.default.createElement(
                   'a',
-                  { href: 'http://dashboard.myhush.org/#donate' },
-                  'Dashboard donation addresses'
+                  { href: 'https://explorer.komodo.services/address/RCBAk2iW2A5GGQQ6u1dtcK1ZGRr8q9cTRR' },
+                  'RCBAk2iW2A5GGQQ6u1dtcK1ZGRr8q9cTRR'
                 ),
                 _react2.default.createElement('br', null)
               )
@@ -30569,32 +30569,32 @@ var ZFooter = function (_React$Component) {
               { md: '4' },
               _react2.default.createElement(
                 'a',
-                { href: 'https://myhush.org/' },
-                'website'
+                { href: 'https://komodo.services/' },
+                'Komodo Services'
               ),
               _react2.default.createElement('br', null),
               _react2.default.createElement(
                 'a',
-                { href: 'https://forum.myhush.org/' },
-                'forum'
+                { href: 'https://explorer.komodo.services/' },
+                'Explorer'
               ),
               _react2.default.createElement('br', null),
               _react2.default.createElement(
                 'a',
-                { href: 'http://dashboard.myhush.org/' },
-                'dashboard'
+                { href: 'http://config.komodo.services/' },
+                'Config Generator'
               ),
               _react2.default.createElement('br', null),
               _react2.default.createElement(
                 'a',
-                { href: 'https://github.com/MyHush/myhushwallet' },
-                'github'
+                { href: 'http://paperwallet.komodo.services' },
+                'PaperWallet'
               ),
               _react2.default.createElement('br', null),
               _react2.default.createElement(
                 'a',
-                { href: 'http://myhush.org/discord' },
-                'discord'
+                { href: 'http://calc.komodo.services' },
+                'Calculator'
               ),
               _react2.default.createElement('br', null)
             )
@@ -30880,7 +30880,7 @@ var ZFaq = function (_React$Component) {
                 'Q: How is this secure? Its on a web browser!'
               ),
               _react2.default.createElement('br', null),
-              'A: My Hush Wallet has replicated the core features of the HUSH daemon in JavaScript! So the process of creating and signing the transactions are all done within the browser. No sensitive information is sent through the network.'
+              'A: Komodo Services Wallet has replicated the core features of the KMD daemon in JavaScript! So the process of creating and signing the transactions are all done within the browser. No sensitive information is sent through the network.'
             ),
             _react2.default.createElement(
               'p',
@@ -30894,8 +30894,8 @@ var ZFaq = function (_React$Component) {
               'A: ',
               _react2.default.createElement(
                 'a',
-                { href: 'https://github.com/myhush/myhushwallet' },
-                'Here you go'
+                { href: 'https://github.com/komodoservices/webwallet' },
+                'Here you go!'
               )
             ),
             _react2.default.createElement(
@@ -30907,19 +30907,19 @@ var ZFaq = function (_React$Component) {
                 'Q: Why are you doing this?'
               ),
               _react2.default.createElement('br', null),
-              'A: My Hush Wallet was inspired by ',
+              'A: Komodo Services Wallet was inspired by ',
+              _react2.default.createElement(
+                'a',
+                { href: 'https://wallet.myhush.org' },
+                'My Hush Wallet'
+              ),
+              ' which was inspired by ',
               _react2.default.createElement(
                 'a',
                 { href: 'https://myzenwallet.io/' },
                 'MyZenWallet\'s'
               ),
-              ' which was inspired by ',
-              _react2.default.createElement(
-                'a',
-                { href: 'https://myetherwallet.com' },
-                'MyEtherWallet\'s.'
-              ),
-              ' We also want to provide the people the ability to interact with the HUSH blockchain easily, without having to run a full node.'
+              ' We also want to provide the people the ability to interact with the KMD blockchain easily, without having to run a full node.'
             )
           )
         )

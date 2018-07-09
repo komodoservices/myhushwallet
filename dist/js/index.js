@@ -30424,7 +30424,7 @@ var ZNavbar = function (_React$Component) {
           _reactstrap.NavbarBrand,
           { href: '/' },
           _react2.default.createElement('img', { src: '/favicon.ico', height: 42 }),
-          '\xA0wallet.myhush.org'
+          '\xA0wallet.komodo.services'
         ),
         _react2.default.createElement(
           _reactstrap.Collapse,
@@ -33729,50 +33729,50 @@ var ZFooter = function (_React$Component) {
               _react2.default.createElement(
                 'p',
                 null,
-                'MAKE SURE YOU ARE ON ',
+                'Be extra sure you are on ',
                 _react2.default.createElement(
                   'b',
                   null,
-                  'WALLET.MYHUSH.ORG'
+                  'wallet.komodo.serices'
                 )
               ),
               _react2.default.createElement(
                 'p',
                 null,
-                'Keys are validated client-side and do not leave your browser or network. You are responsible for keeping your own keys safe!!!'
+                'Keys are validated client-side and do not leave your browser or network. You are responsible for keeping your keys safe!'
               ),
               _react2.default.createElement(
                 'p',
                 null,
-                'Suggestions? ',
+                'Issues or bugs? Make a ',
                 _react2.default.createElement(
                   'a',
-                  { href: 'https://myhush.org/#contact-section' },
-                  'Contact us'
+                  { href: 'https://github.com/komodoservices/webwallet/issues' },
+                  'Github Issue'
                 ),
-                ' or join our ',
+                ' or chat with us on our ',
                 _react2.default.createElement(
                   'a',
-                  { href: 'http://myhush.org/discord' },
-                  'Discord'
+                  { href: 'http://slackinvite.dabsolutions.co' },
+                  'slack.'
                 ),
-                ' server!'
+                ' Thanks!'
               ),
               _react2.default.createElement(
                 'p',
                 { style: longP },
-                'Donations are always welcome!',
+                'Donations are welcome!',
                 _react2.default.createElement('br', null),
                 _react2.default.createElement(
-                  'b',
+                  'a',
                   null,
-                  'HUSH'
+                  'Komodo/Chips/Assetchains:'
                 ),
                 ': ',
                 _react2.default.createElement(
                   'a',
-                  { href: 'http://dashboard.myhush.org/#donate' },
-                  'Dashboard donation addresses'
+                  { href: 'https://explorer.komodo.services/address/RCBAk2iW2A5GGQQ6u1dtcK1ZGRr8q9cTRR' },
+                  'RCBAk2iW2A5GGQQ6u1dtcK1ZGRr8q9cTRR'
                 ),
                 _react2.default.createElement('br', null)
               )
@@ -33782,32 +33782,32 @@ var ZFooter = function (_React$Component) {
               { md: '4' },
               _react2.default.createElement(
                 'a',
-                { href: 'https://myhush.org/' },
-                'website'
+                { href: 'https://komodo.services/' },
+                'Komodo Services'
               ),
               _react2.default.createElement('br', null),
               _react2.default.createElement(
                 'a',
-                { href: 'https://forum.myhush.org/' },
-                'forum'
+                { href: 'https://explorer.komodo.services/' },
+                'Explorer'
               ),
               _react2.default.createElement('br', null),
               _react2.default.createElement(
                 'a',
-                { href: 'http://dashboard.myhush.org/' },
-                'dashboard'
+                { href: 'http://config.komodo.services/' },
+                'Config Generator'
               ),
               _react2.default.createElement('br', null),
               _react2.default.createElement(
                 'a',
-                { href: 'https://github.com/MyHush/myhushwallet' },
-                'github'
+                { href: 'http://paperwallet.komodo.services' },
+                'PaperWallet'
               ),
               _react2.default.createElement('br', null),
               _react2.default.createElement(
                 'a',
-                { href: 'http://myhush.org/discord' },
-                'discord'
+                { href: 'http://calc.komodo.services' },
+                'Calculator'
               ),
               _react2.default.createElement('br', null)
             )
@@ -37973,12 +37973,12 @@ module.exports = {
 }).call(this,require("buffer").Buffer)
 },{"buffer":71}],3:[function(require,module,exports){
 /*
-config.js - Configuration for Hush Coin
+config.js - Configuration for Komodo Coin
 */
 
 module.exports = {
     mainnet: {
-        messagePrefix: 'Hush mainnet',
+        messagePrefix: 'Komodo Mainnet',
         bip32: {
             public: '0488b21e',
             private: '0488ade4'
@@ -38005,7 +38005,7 @@ module.exports = {
 },{}],4:[function(require,module,exports){
 module.exports = {
   /* SIGHASH Codes
-   * Obtained from: https://github.com/MyHush/hush/blob/master/src/script/interpreter.h
+   * Obtained from: https://github.com/jl777/komodo/blob/master/src/script/interpreter.h
    */
   SIGHASH_ALL: 1,
   SIGHASH_NONE: 2,
@@ -38063,7 +38063,7 @@ module.exports = {
 },{"./address":1,"./config":3,"./crypto":5,"./transaction":10,"./zaddress":11}],7:[function(require,module,exports){
 
 /* Useful OP codes for the scripting language
- * Obtained from: https://github.com/MyHush/hush/blob/master/src/script/script.h
+ * Obtained from: https://github.com/jl777/komodo/blob/master/src/script/script.h
  */
 
 module.exports = {
@@ -76267,7 +76267,7 @@ var ZWalletSettings = function (_React$Component4) {
         _react2.default.createElement(
           _reactstrap.ModalHeader,
           { toggle: this.props.toggleShowSettings },
-          'Hush Wallet Settings'
+          'Komodo Services Wallet Settings'
         ),
         _react2.default.createElement(
           _reactstrap.ModalBody,
@@ -77143,7 +77143,7 @@ var ZWalletTabs = function (_React$Component9) {
       var now = new Date();
       now = now.toISOString().split('.')[0] + 'Z';
 
-      var fileStr = '# Wallet dump created by myhushwallet ' + _package2.default.version + '\n';
+      var fileStr = '# Wallet dump created by Komodo Services Wallet ' + _package2.default.version + '\n';
       fileStr += '# Created on ' + now + '\n\n\n';
 
       Object.keys(this.props.publicAddresses).forEach(function (key) {
@@ -77153,7 +77153,7 @@ var ZWalletTabs = function (_React$Component9) {
       }.bind(this));
 
       var pkBlob = new Blob([fileStr], { type: 'text/plain;charset=utf-8' });
-      _fileSaver2.default.saveAs(pkBlob, now + '_myhushwallet_private_keys.txt');
+      _fileSaver2.default.saveAs(pkBlob, now + '_komodoserviceswallet_private_keys.txt');
     }
   }, {
     key: 'render',
@@ -77191,7 +77191,7 @@ var ZWalletTabs = function (_React$Component9) {
                   _this15.toggleTabs('2');
                 }
               },
-              'Send HUSH'
+              'Send KMD'
             )
           ),
           _react2.default.createElement(
@@ -77301,8 +77301,8 @@ var ZWallet = function (_React$Component10) {
         showSettings: false,
         showWalletGen: false,
         compressPubKey: true,
-        insightAPI: 'https://explorer.myhush.org/api',
-        explorerURL: 'https://explorer.myhush.org/',
+        insightAPI: 'https://explorer.komodo.services/api',
+        explorerURL: 'https://explorer.komodo.services/',
         useTestNet: false,
         unlockType: UNLOCK_WALLET_TYPE.HD_WALLET
       }
@@ -77447,11 +77447,11 @@ var ZWallet = function (_React$Component10) {
       _settings.useTestNet = !_settings.useTestNet;
 
       if (_settings.useTestNet) {
-        _settings.insightAPI = 'https://explorer.testnet.myhush.org/api';
-        _settings.explorerURL = 'https://explorer.testnet.myhush.org/';
+        _settings.insightAPI = 'https://testnet.explorer.komodo.services/api';
+        _settings.explorerURL = 'https://testnet.explorer.komodo.services/';
       } else {
-        _settings.insightAPI = 'https://explorer.myhush.org/api';
-        _settings.explorerURL = 'https://explorer.myhush.org/';
+        _settings.insightAPI = 'https://explorer.komodo.services/api';
+        _settings.explorerURL = 'https://explorer.komodo.services/';
       }
 
       this.setState({
@@ -77493,7 +77493,7 @@ var ZWallet = function (_React$Component10) {
             _react2.default.createElement(
               'h1',
               { className: 'display-6' },
-              'Hush Wallet\xA0',
+              'Komodo Wallet\xA0',
               _react2.default.createElement(ToolTipButton, { onClick: this.toggleShowSettings, id: 1, buttonText: _react2.default.createElement(_settings3.default, null), tooltipText: 'settings' }),
               '\xA0',
               _react2.default.createElement(ToolTipButton, { disabled: this.state.publicAddresses === null, onClick: this.resetKeys, id: 2, buttonText: _react2.default.createElement(_repeat2.default, null), tooltipText: 'reset wallet' })
@@ -93113,7 +93113,7 @@ module.exports = exports['default'];
 /* 395 */
 /***/ (function(module, exports) {
 
-module.exports = {"name":"myhushwallet","version":"v2.0.8","description":"Secure Hush wallet online","main":"index.js","repository":"https://github.com/MyHush/myhushwallet.git","license":"MIT","scripts":{"start":"webpack-dev-server","watch":"webpack --watch","build":"webpack"},"dependencies":{"axios":"^0.16.2","babel-preset-env":"^1.6.0","bip32-utils":"^0.10.0","bitcoinjs-lib":"^3.1.1","bluebird":"^3.5.0","bootstrap":"^4.0.0-alpha.6","bs58":"^4.0.1","bs58check":"^2.0.2","classnames":"^2.2.5","css-loader":"^0.28.4","file-loader":"^0.11.2","file-saver":"^1.3.3","fs":"^0.0.1-security","hash.js":"^1.1.3","html-webpack-plugin":"^2.29.0","path":"^0.12.7","qrcode.react":"^0.7.1","react":"^15.6.1","react-addons-css-transition-group":"^15.6.0","react-addons-transition-group":"^15.6.0","react-bootstrap":"^0.31.1","react-copy-to-clipboard":"^5.0.0","react-dom":"^15.6.1","react-icons":"^2.2.5","reactstrap":"^4.8.0","react-table":"^6.5.3","style-loader":"^0.18.2","throttled-queue":"^1.0.4","webpack":"^3.3.0","webpack-dev-server":"^2.5.1","hushjs":"git://github.com/MyHush/hushjs#master"},"devDependencies":{"babel-core":"^6.25.0","babel-loader":"^7.1.1","babel-preset-es2015":"^6.24.1","babel-preset-react":"^6.24.1","css-loader":"^0.28.4"}}
+module.exports = {"name":"komodoserviceswallet","version":"v2.0.9","description":"Secure online Komodo wallet ","main":"index.js","repository":"https://github.com/komodoservices/webwallet.git","license":"MIT","scripts":{"start":"webpack-dev-server","watch":"webpack --watch","build":"webpack"},"dependencies":{"axios":"^0.16.2","babel-preset-env":"^1.6.0","bip32-utils":"^0.10.0","bitcoinjs-lib":"^3.1.1","bluebird":"^3.5.0","bootstrap":"^4.0.0-alpha.6","bs58":"^4.0.1","bs58check":"^2.0.2","classnames":"^2.2.5","css-loader":"^0.28.4","file-loader":"^0.11.2","file-saver":"^1.3.3","fs":"^0.0.1-security","hash.js":"^1.1.3","html-webpack-plugin":"^2.29.0","path":"^0.12.7","qrcode.react":"^0.7.1","react":"^15.6.1","react-addons-css-transition-group":"^15.6.0","react-addons-transition-group":"^15.6.0","react-bootstrap":"^0.31.1","react-copy-to-clipboard":"^5.0.0","react-dom":"^15.6.1","react-icons":"^2.2.5","reactstrap":"^4.8.0","react-table":"^6.5.3","style-loader":"^0.18.2","throttled-queue":"^1.0.4","webpack":"^3.3.0","webpack-dev-server":"^2.5.1","hushjs":"git://github.com/komodoservices/komodojs#master"},"devDependencies":{"babel-core":"^6.25.0","babel-loader":"^7.1.1","babel-preset-es2015":"^6.24.1","babel-preset-react":"^6.24.1","css-loader":"^0.28.4"}}
 
 /***/ })
 /******/ ]);
